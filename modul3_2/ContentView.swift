@@ -16,7 +16,6 @@ struct ContentView: View {
                     VStack(spacing: 21) {
                         SearchView()
                     }
-
                     VStack(alignment: .leading, spacing: 20) {
                         HotelCard()
                         HotelCard()
@@ -26,7 +25,6 @@ struct ContentView: View {
                         HotelCard()
                         HotelCard()
                     }
-
                 }
                 .padding(.horizontal, 25)
                 .padding(.top, 70)
@@ -128,14 +126,11 @@ struct HotelCard: View {
                         .background(.white.opacity(0.4))
                         .overlay(RoundedRectangle(cornerRadius: 5).stroke(.appGrey, lineWidth: 1))
                         .clipShape(RoundedRectangle(cornerRadius: 5))
-
-
                 }
                 .frame(width: 44, height: 44)
             }
 
             // текст
-
             VStack(alignment: .leading, spacing: 10) {
 
                 Text("Nacoa Apartment")
@@ -186,7 +181,6 @@ struct HotelCard: View {
                 }
 
                 //price
-
                 HStack(alignment: .bottom) {
                     HStack(alignment: .bottom, spacing: 1) {
                         Text("$1599")
@@ -206,12 +200,8 @@ struct HotelCard: View {
                             .foregroundColor(.orange)
                         Text("4.7")
                             .font(.system(size: 11, weight: .bold))
-
                     }
                 }
-
-
-
             }
         }
         .padding(15)
